@@ -39,8 +39,7 @@ module.exports = function (grunt) {
                 files: [
                     // includes files within path
                     { expand: true, flatten: true, src: ['assets/icons/*'], dest: 'build/assets/icons/', filter: 'isFile' },
-                    { expand: true, flatten: true, src: ['assets/sprites/*'], dest: 'build/assets/sprites/', filter: 'isFile' },
-                    { flatten: true, src: ['home.html'], dest: 'build/home.html', filter: 'isFile' }
+                    { expand: true, flatten: true, src: ['assets/sprites/*'], dest: 'build/assets/sprites/', filter: 'isFile' }
                 ],
             },
         },
@@ -66,7 +65,7 @@ module.exports = function (grunt) {
                     removeEmptyAttributes: true
                 },
                 files: {
-                    'build/home.html': 'home.html'
+                    'build/index.html': 'home.html'
                 }
             }
         },
